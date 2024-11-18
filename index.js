@@ -11,10 +11,6 @@ const port = 3000;
 app.use(express.static('static'));
 app.use(cors());
 app.use(express.json());
-
-app.get('/', (req, res) => {
-  res.sendFile(resolve(__dirname, 'pages/index.html'));
-});
 //************************************************************
 let db;
 (async () => {
